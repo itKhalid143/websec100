@@ -4,7 +4,9 @@ An insecure direct object reference (IDOR) is an access control vulnerability th
 
 
 `GET /account/info?id=12`
+
 `GET /backup/10.txt`
+
 `POST /Credentials
 	{UID:23,Email"example@test.com"}
 `
