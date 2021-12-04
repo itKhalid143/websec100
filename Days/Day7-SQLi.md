@@ -10,13 +10,13 @@ FROM users
 WHERE
 	username = 'INPUT' 
 	AND
-	password='INPUT' 
+	password = 'INPUT' 
 ;
 ```
 ### Prepared Statement
 ```mysql
 database.query(SELECT username FROM users WHERE username = ? AND password= ?', (username, password)
-				)
+			)
 ```
 - A prepared statement or a parameterized statement is used to execute the same statement repeatedly with high efficiency and protect against SQL injections.
 
