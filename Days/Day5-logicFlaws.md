@@ -5,14 +5,14 @@ Business Logic Flaws occurs when users pass values to the target which are not e
 
 ## Development processes
 
-	### Waterfall Model
-		![waterfall](https://static.javatpoint.com/tutorial/jira/images/jira-waterfall-model.png)
+### Waterfall Model
+![waterfall](https://static.javatpoint.com/tutorial/jira/images/jira-waterfall-model.png)
 
-	### V-Model
-		![vmodel](https://miro.medium.com/max/676/1*1_y1njK_-OW_Sqv1cKlDcg.png)
+### V-Model
+![vmodel](https://miro.medium.com/max/676/1*1_y1njK_-OW_Sqv1cKlDcg.png)
 
-	### Agile
-		![agile](https://www.nvisia.com/hubfs/agile-methodology-chicago.png
+### Agile
+![agile](https://www.nvisia.com/hubfs/agile-methodology-chicago.png)
 
 ***
 
