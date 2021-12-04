@@ -18,7 +18,7 @@ WHERE
 database.query(SELECT username FROM users WHERE username = ? AND password= ?', (username, password)
 				)
 ```
-- A prepared statement or a parameterized statement is used to execute the same statement repeatedly with high efficiency and protect against SQL injections
+- A prepared statement or a parameterized statement is used to execute the same statement repeatedly with high efficiency and protect against SQL injections.
 
 *** 
 
@@ -38,16 +38,16 @@ SQL injection allows an attacker to interfere with the queries that an applicati
 
 - In-band SQLi
 	- Error-Based
-		- The attacker causes the dastabase to produce error messages. (Can be used to gather information about the database)
+		- The attacker causes the database to produce error messages. (Can be used to gather information about the database)
 	- Union-Based
-		- It takes advantage of UNION SQL operator, which add multiple select statements to get a single HTTP reqponse.
+		- It takes advantage of UNION SQL operator, which adds multiple select statements to get a single HTTP response.
 - Blind
 	- Occurs when you can inject SQL statements into a query but can't get a query's direct output.
 	- Boolean
-		- the result will vary depending o wether the rquery is true or false.
+		- the result will vary depending o whether the query is true or false.
 	- Time-Based
-		- The attacker can see from the time database takes to respond, wuether a query is true or false.
-- Othersa: Out-Of-Band, Stacked Queries and Routed SQLI (Very Uncommon)
+		- The attacker can see from the time database takes to respond, whether a query is true or false.
+- Others: Out-Of-Band, Stacked Queries and Routed SQLI (Very Uncommon)
 ***
 
 ## Countermeasures:
@@ -85,8 +85,8 @@ Great Resource: https://github.com/khalid0143/PayloadsAllTheThings
 
 ## Takeaways: 
 
-	- One way to find SQLi Vulnerabilities is to test URL parameters and look for subtle changes to query results.
-	- Keep eye out for HTTP requests that acccept encoded parameters.
-	- When looking for SQLI Vulnerabilities, explore places where you can pass unescaped single or double quotes for a query.
-	- Look for places where you can pass data to a site in unexpected wasys, such as were you can subtitue array parameters in request data
+- One way to find SQLi Vulnerabilities is to test URL parameters and look for subtle changes to query results.
+- Keep an eye out for HTTP requests that accept encoded parameters.
+- When looking for SQLI Vulnerabilities, explore places where you can pass unescaped single or double quotes for a query.
+- Look for places where you can pass data to a site in unexpected ways, such as where you can substitute array parameters in request data
 
