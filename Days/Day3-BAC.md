@@ -3,7 +3,9 @@
 Broken Access Control is an attack vector, allows the attack to perform actions (whether from the Application Functionalities, Accessing Resources) outside of its intended permissions.
 
 `http://site.com/info?id=differentID`
+
 `http://site.com/admin/view/`
+
 `http://site.com/admin/add?isAdmin=true`
 
 
