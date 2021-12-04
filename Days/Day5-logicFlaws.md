@@ -18,12 +18,12 @@ Business Logic Flaws occurs when users pass values to the target which are not e
 
 ## Countermeasures:
 
-	- Developers must have a full understanding of the technologies being used/been used to perform any updates or changes, with the need of great documentation for every change. 
-	- Avoid making implicit about user's behaviors dealing with functionalities of the application. 
-	- Always make sure that the input is sanitized before being processed.
+- Developers must have a full understanding of the technologies being used/been used to perform any updates or changes, with the need of great documentation for every change. 
+- Avoid making implicit about user's behaviors dealing with functionalities of the application. 
+- Always make sure that the input is sanitized before being processed.
 
 ***
 
 ## Takeaways: 
 
-	- Always look for the technologies and the functionalities that the application uses.(Read Documentations)
+- Always look for the technologies and the functionalities that the application uses.(Read Documentations)

@@ -13,14 +13,14 @@ Broken Access Control is an attack vector, allows the attack to perform actions 
 
 ## Types of Broken Access Control: 
 
-	- Vertical access controls
-		- The Attacker has access to different application functions. For example, He is able to modify or delete any user's account, which those commands are made for the Administrator role. (Users with different access levels)
-	- Horizontal access controls
-		- The Attacker has restricted access to resources to the users who are intended to access those resources. (Resources of the same type)
+- Vertical access controls
+	- The Attacker has access to different application functions. For example, He is able to modify or delete any user's account, which those commands are made for the Administrator role. (Users with different access levels)
+- Horizontal access controls
+	- The Attacker has restricted access to resources to the users who are intended to access those resources. (Resources of the same type)
 
 ***
 
 ## Takeaways: 
 
-	- Must acknowledge our target technologies and functionalities.
-	- Writing down every possible role.
+- Must acknowledge our target technologies and functionalities.
+- Writing down every possible role.
