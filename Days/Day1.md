@@ -1,4 +1,4 @@
-#Open Redirect Vulnerability#
+# Open Redirect Vulnerability
 
 Occurs when the application allows us to redirect to the Attacker's website, which can be leveraged for phishing attacks against users of the application. (low impact)
 
@@ -7,9 +7,9 @@ Occurs when the application allows us to redirect to the Attacker's website, whi
 ![Open Redirect](https://1tskcg39n5iu1jl9xp2ze2ma-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/open-redirection-vulnerability.png)
 
 ## Types of Redirections: 
-Markup :
-	* Header-Based
-	* Javascript-Based
+
+	- Header-Based
+	- Javascript-Based
 
 ***
 
@@ -22,7 +22,7 @@ Markup :
 ***
 
 ## Takeaways: 
-Markup :
+
 	- Changing the domain_name parameter to an external site would redirect the user offsite
 	- Notice the services and technology that are being used in the application, each represents a new attack vector.
 
