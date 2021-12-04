@@ -73,7 +73,7 @@ Depends on the WAF mechainsms, here's few bypasses:
 - No AND or OR
 	- && and ||
 
-Great Resource: https://github.com/khalid0143/PayloadsAllTheThings
+Great Resource: https://github.com/swisskyrepo/PayloadsAllTheThings
 
 ***
 
