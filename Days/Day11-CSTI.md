@@ -9,8 +9,6 @@ CSTI could allow you to execute arbitrary JavaScript code in the victim occurs w
 - Inserting CSTI Attack vector in every possible input field to identify the vulnerability.
 - In case the Vulnerability is Identified, we must understand the targeted templating engine and get the basics of it and how it works to perform more attacks on it.
 - Payload to test for the CSTI Vulnerability:
-```angular
-{{5*5}}
-```
-	- The attack would resolve to 25 means the payload has worked we must increase the impact of the vulnerability.
-	- CSTI leads to perform Cross-site scripting attacks.
+	- ```{{5*5}}```
+- The attack would resolve to 25 means the payload has worked we must increase the impact of the vulnerability.
+- CSTI leads to perform Cross-site scripting attacks.
