@@ -31,5 +31,4 @@ Command injection is a cyber attack that involves executing arbitrary commands o
 - We can test for blind command injection by launching a request that will execute a
 ping command to the loopback address.
 	- If longer than 10 seconds, we probably have a blind command injection, which can be a false positive as well.
-```& ping -c 10 127.0.0.1 &
-```
+```& ping -c 10 127.0.0.1 &```
