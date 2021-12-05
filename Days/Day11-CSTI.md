@@ -13,6 +13,14 @@ CSTI could allow you to execute arbitrary JavaScript code in the victim occurs w
 - The attack would resolve to 25 means the payload has worked we must increase the impact of the vulnerability.
 - CSTI leads to perform Cross-site scripting attacks.
 
+***
+
+## Takeaways
+
+- You could confirm this by using tool such as <span style="color:blue"> *Wappalyzer*</span> or <span style="color:blue"> *BuiltWith*</span> or by vewing the source and looking for ng- HTML attribues.
+- Understanding how the software you're testing works will help you uncover vulnerabilities.
+
+***
 
 ## References
 - https://book.hacktricks.xyz/pentesting-web/client-side-template-injection-csti
