@@ -17,7 +17,7 @@ CSTI could allow you to execute arbitrary JavaScript code in the victim occurs w
 
 ## Takeaways
 
-- You could confirm this by using tool such as  **Wappalyzer**or **BuiltWith** or by vewing the source and looking for ng- HTML attribues.
+- You could confirm this by using tool such as  **Wappalyzer** or **BuiltWith** or by vewing the source and looking for ng- HTML attribues.
 - Understanding how the software you're testing works will help you uncover vulnerabilities.
 
 ***
