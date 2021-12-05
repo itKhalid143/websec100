@@ -17,7 +17,6 @@ url=127.0.0.1:8080/getCredentials.php
 	- Sometimes Partial URLS in the body instead of a full URL.
 	- URL within data files usch as XML, CSF, etc.
 	- The referer header can sometimes contain SSRF defects. 
-- 
 
 ***
 
