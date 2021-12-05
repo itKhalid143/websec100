@@ -12,3 +12,8 @@ CSTI could allow you to execute arbitrary JavaScript code in the victim occurs w
 	- ```{{5*5}}```
 - The attack would resolve to 25 means the payload has worked we must increase the impact of the vulnerability.
 - CSTI leads to perform Cross-site scripting attacks.
+
+
+## References
+- https://book.hacktricks.xyz/pentesting-web/client-side-template-injection-csti
+	- For different Attack method applied on Different Template Engines.
