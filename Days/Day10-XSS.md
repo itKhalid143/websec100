@@ -8,7 +8,7 @@ Cross-site Scripting (XSS) is a client-side code injection attack. The attacker 
 - Reflected XSS
 	- User input get reflected into the vector we injected in, input isn't stored by any means.
 
-https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script>
+```https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script>```
 
 - Stored XSS
 	- User input gets stored into database, the value get reflect. (Could be as an example, a Blog post, user nicknames , a Comment, etc)
@@ -23,7 +23,9 @@ https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script
 ## XSS Attack Vectors
 
 - ```<script>``` tag
+```javascript
 <script> alert("XSS"); </script>
+```
 - JavaScript events
 ```javascript
 <body onload=alert("XSS")>
@@ -57,7 +59,9 @@ https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script
 ***
 
 ## byPassing Template Engines
-- We must search for the right template engine that oru application uses, and then we makes our search on the available bypasses inorder to exploit our target.
+- We must search for the right template engine that our application uses, and then we make our search on the available bypasses in order to exploit our target.
+
+***
 
 ### CSP - Content Security Policy
 - CSP is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross-Site Scripting (XSS) and data injection attacks. 
@@ -66,12 +70,13 @@ https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script
 	 - Content-Security-Policy: script-src 'self'
 
 #### How to ByPass CSP
-- 'unsafe-inline'
+- ```unsafe-inline```
 	- Content-Security-Policy: script-src https://google.com 'unsafe-inline';
 	- Working payload: ``` "/><script>alert(1);</script>```
-	
+
 - Read more: https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass
 ***
+
 ## Countermeasures:
 
 - Must sanitize the input.
@@ -84,6 +89,8 @@ https://insecure-website.com/status?message=<script>/*+Malicious+Code+*/</script
 
 ## Takeaways: 
 
-- 
-- 
+- Be sure to view the page source and confirm whether your payloads are being rendered in HTML or Javascript Tags.
+- XSS payloads don't always execute immediately after they're submitted.
+- When sites sanitize user input by modifying it instead of encoding or scaping values, you should continue testing.
+- Having g Javascript knowledge is essential for successfull confirming more complex vulnerabilities.
 
