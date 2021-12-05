@@ -1,5 +1,6 @@
 # Insecure Desrialization Vulnerability
-- Refers aswell to Object Injection
+- Refers aswell to Object Injection.
+
 Insecure deserialization is when user-controllable data is deserialized by a website. This potentially enables an attacker to manipulate serialized objects in order to pass harmful data into the application code.
 - It does require decent knowledge of the programming languages in question but it can also occur very trivially if you have some knowledge of the programming languages.
 
