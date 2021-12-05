@@ -2,7 +2,7 @@
 
 Command injection is a cyber attack that involves executing arbitrary commands on a host operating system (OS)
 
-[!Sample RCE](https://farm1.staticflickr.com/882/41036646032_7fe328f7b2_b.jpg)
+![Sample RCE](https://farm1.staticflickr.com/882/41036646032_7fe328f7b2_b.jpg)
 
 ## Attack Strategy:
 
