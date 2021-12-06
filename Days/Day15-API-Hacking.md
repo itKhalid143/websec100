@@ -6,13 +6,13 @@
 
 ## Importing the Application's API to our Postman! for more Testing!
 
-![****](/websec100/Days/Screenshots/Day15/api-import.PNG)
+![****](/Days/Screenshots/Day15/api-import.PNG)
 
 - Give us details about the API, Postman will generate a Collection from the imported API!
 
-![****](/websec100/Days/Screenshots/Day15/api-import1.PNG)
+![****](/Days/Screenshots/Day15/api-import1.PNG)
 
-![****](/websec100/Days/Screenshots/Day16/api-import2.PNG)
+![****](/Days/Screenshots/Day15/api-import2.PNG)
 
 Thanks to Postman! did all the heavy work for us!
 
