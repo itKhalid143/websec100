@@ -1,8 +1,7 @@
 # Server Side Request Forgery Vulnerability
 
-While CSRF exploits another user, an SSRF explpots a targeted application server, SSRF Vulnerabilities provide attackers access to a broader network to tager, attacker makes a server perform unintended requests.
-- Another way to abuse this vulnerability would be to make a request to a third
-party or external server that only accepts requests coming from our target.
+While CSRF exploits another user, an SSRF exploits a targeted application server, SSRF Vulnerabilities provide attackers access to a broader network to target, attacker makes the server performs unintended requests.
+- Another way to abuse this vulnerability would be to make a request to a third party or external server that only accepts requests coming from our target.
 
 ```
 POST /random.php
