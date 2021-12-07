@@ -23,7 +23,8 @@ The LFI to RCE via PHP sessions follows the same concept of the log poisoning te
 - Then we can discover where the PHP sessions files are.
 	- PHP stores session data in files within the system in different locations based on the configuration.
 	- PHP, by default use the following sheme ```sess_<SESSION_ID>```, it's copied from the cookies.
-	![****](/websec365/Days/Screenshots/Day16)
+
+	![****](/websec365/Days/Screenshots/Day16.PNG)
 
 - Include a **PHP code into the session** and finally call the file via LFI
 
